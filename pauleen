@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Sophia @ 18 | Debut Invitation</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600;700&family=Poppins:wght&display=swap
+
+<style>
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+margin:0;
+font-family:Poppins,sans-serif;
+background:#fff9fa;
+color:#444;
+overflow-x:hidden;
+}
+
+:root{
+--pink:#f7d9e3;
+--rose:#d8a7b1;
+--gold:#d4af37;
+--cream:#fffdf9;
+}
+
+section{
+padding:80px 8%;
+}
+
+.title{
+font-family:'Playfair Display',serif;
+text-align:center;
+color:var(--gold);
+font-size:2.8rem;
+margin-bottom:40px;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+background:
+linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)),
+url("https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
+background-position:center;
+}
+
+.hero-content{
+animation:fadeIn 2s ease;
+}
+
+.hero h2{
+font-family:'Great Vibes',cursive;
+font-size:5rem;
+margin:0;
+}
+
+.hero h1{
+font-family:'Playfair Display',serif;
+font-size:4rem;
+letter-spacing:5px;
+margin:0;
+}
+
+.hero p{
+font-size:1.2rem;
+}
+
+.button{
+display:inline-block;
+padding:15px 35px;
+background:var(--gold);
+color:white;
+text-decoration:none;
+border-radius:50px;
+margin-top:18px;
+font-weight:bold;
+}
+
+.button:hover{
+transform:scale(1.05);
+transition:.3s;
+}
+
+.countdown{
+background:var(--pink);
+text-align:center;
+}
+
+.timer{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.time-box{
+background:white;
+padding:20px;
+border-radius:20px;
+width:120px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.time-box span{
+font-size:2rem;
+font-weight:bold;
+color:var(--rose);
+}
+
+.card-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+text-align:center;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:320px;
+object-fit:cover;
+border-radius:20px;
+transition:.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+.rsvp{
+background:var(--pink);
+text-align:center;
+}
+
+input, textarea{
+width:100%;
+padding:15px;
+margin:10px 0;
+border-radius:10px;
+border:1px solid #ddd;
+box-sizing:border-box;
+font-family:Poppins;
+}
+
+form{
+max-width:600px;
+margin:auto;
+}
+
+.submit{
+background:var(--gold);
+border:none;
+color:white;
+padding:15px 30px;
+border-radius:50px;
+cursor:pointer;
+font-size:1rem;
+}
+
+.music-player{
+position:fixed;
+bottom:20px;
+right:20px;
+background:white;
+padding:10px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.12);
+z-index:999;
+}
+
+footer{
+background:#f6f1f2;
+text-align:center;
+padding:30px;
+}
+
+.fade{
+opacity:0;
+transform:translateY(30px);
+transition:1s;
+}
+
+.fade.show{
+opacity:1;
+transform:translateY(0);
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="music-player">
+<audio controls autoplay loop>
+YOUR-MUSIC-LINK.mp3
+</audio>
+</div>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h2>Sophia</h2>
+
+<h1>@ 18</h1>
+
+<p>Blooming Into Adulthood</p>
+
+<p>
+15 January 2027<br>
+6:00 PM<br>
+Grand Ballroom, ABC Hotel
+</p>
+
+#rsvp
+RSVP NOW
+</a>
+
+</div>
+
+</section>
+
+<section class="countdown fade">
+
+<h2 class="title">
+Countdown To My Special Day
+</h2>
+
+<div class="timer">
+
+<div class="time-box">
+<span id="days">0</span>
+<p>Days</p>
+</div>
+
+<div class="time-box">
+<span id="hours">0</span>
+<p>Hours</p>
+</div>
+
+<div class="time-box">
+<span id="minutes">0</span>
+<p>Minutes</p>
+</div>
+
+<div class="time-box">
+<span id="seconds">0</span>
+<p>Seconds</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="fade">
+
+<h2 class="title">
+A Special Invitation
+</h2>
+
+<div style="max-width:800px;margin:auto;text-align:center;">
+
+<p>
+With grateful hearts and joyful spirits,
+I warmly invite you to celebrate my
+Eighteenth Birthday.
+</p>
+
+<p>
+As I step into adulthood, I would be honoured to share
+this unforgettable milestone with my family and friends.
+</p>
+
+</div>
+
+</section>
+
+<section class="fade">
+
+<h2 class="title">
+Event Details
+</h2>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>📅 Date</h3>
+15 January 2027
+</div>
+
+<div class="card">
+<h3>🕕 Time</h3>
+6:00 PM
+</div>
+
+<div class="card">
+<h3>📍 Venue</h3>
+Grand Ballroom<br>
+ABC Hotel
+</div>
+
+</div>
+
+</section>
+
+<section class="fade">
+
+<h2 class="title">
+Dress Code
+</h2>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>Ladies</h3>
+Blush Pink<br>
+Dusty Rose<br>
+Champagne<br>
+Sage Green
+</div>
+
+<div class="card">
+<h3>Gentlemen</h3>
+Formal Suit<br>
+Barong Tagalog<br>
+Neutral Tones
+</div>
+
+</div>
+
+</section>
+
+<section class="fade">
+
+<h2 class="title">
+18 Roses • 18 Candles
+</h2>
+
+<div class="card-grid">
+
+<div class="card">
+🌹<br><br>
+A symbol of love,
+friendship and support.
+</div>
+
+<div class="card">
+🕯<br><br>
+Meaningful messages and
+heartfelt wishes.
+</div>
+
+</div>
+
+</section>
+
+<section class="fade">
+
+<h2 class="title">
+Through The Years
+</h2>
+
+<div class="gallery">
+
+https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=600&q=80
+
+<img src="httpsunsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=600&q=80
+
+<img src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?auto=format&fit=crop&w=600iv>
+
+</section>
+
+<section class="fade">
+
+<h2 class="title">
+Venue Location
+</h2>
+
+<iframe
+src="https://maps.google.com/maps?q=Manila&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="100%"
+height="450"
+style="border:0;border-radius:20px;">
+</iframe>
+
+</section>
+
+<section id="rsvp" class=@gmail.com
+
+<input
+type="text"
+placeholder="Your Name"
+required>
+
+<input
+type="email"
+placeholder="Email Address"
+required>
+
+<textarea
+rows="5"
+placeholder="Message / RSVP">
+</textarea>
+
+<button class="submit">
+Reserve My Seat
+</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<h3>Thank You</h3>
+
+<p>
+I am excited to celebrate this beautiful milestone
+with the people I cherish most.
+</p>
+
+<p>
+With Love,<br>
+Sophia
+</p>
+
+</footer>
+
+<script>
+
+const countDownDate =
+new Date("Jan 15, 2027 18:00:00").getTime();
+
+setInterval(function(){
+
+const now = new Date().getTime();
+const distance = countDownDate - now;
+
+const days = Math.floor(distance/(1000*60*60*24));
+const hours = Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+const minutes = Math.floor((distance%(1000*60*60))/(1000*60));
+const seconds = Math.floor((distance%(1000*60))/1000);
+
+document.getElementById("days").innerHTML = days;
+document.getElementById("hours").innerHTML = hours;
+document.getElementById("minutes").innerHTML = minutes;
+document.getElementById("seconds").innerHTML = seconds;
+
+},1000);
+
+const observer = new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add('show');
+}
+});
+});
+
+document.querySelectorAll('.fade').forEach(el=>{
+observer.observe(el);
+});
+
+</script>
+
+</body>
+</html>
